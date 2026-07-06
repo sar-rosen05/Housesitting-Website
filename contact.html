@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Booking | Sarah's Housesitting</title>
+  <meta name="description" content="Contact Sarah's Housesitting or book directly online. Serving the Greater Seattle Area, WA." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand">Sarah's <span>Housesitting</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1>Contact &amp; Booking</h1>
+    <p>Reach out directly, or check availability and book below.</p>
+  </section>
+
+  <section>
+    <div class="contact-layout">
+      <div class="contact-info-card">
+        <h3>Get in Touch</h3>
+        <div class="contact-line">
+          <span class="icon">📧</span>
+          <a href="mailto:sarah@teamrosen.com">sarah@teamrosen.com</a>
+        </div>
+        <div class="contact-line">
+          <span class="icon">📞</span>
+          <a href="tel:+14256559085">(425) 655-9085</a>
+        </div>
+        <div class="contact-line">
+          <span class="icon">📍</span>
+          <span>Serving the Greater Seattle Area, WA</span>
+        </div>
+      </div>
+
+      <div class="booking-card">
+        <h3>Book Online</h3>
+        <p class="hint">
+          Pick a date and time that works for you &mdash; availability updates in real time.
+        </p>
+
+        <!--
+          To activate booking:
+          1. Create a free account at https://cal.com
+          2. Create an event type (e.g. "Housesitting Consult")
+          3. Replace CAL_LINK below with "your-username/your-event-slug"
+        -->
+        <div id="cal-inline"></div>
+        <noscript>
+          <div class="booking-fallback">
+            Online booking requires JavaScript. Please email or call to schedule.
+          </div>
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <div class="footer-brand">Sarah's <span>Housesitting</span></div>
+        <p>Serving the Greater Seattle Area, WA</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Sarah's Housesitting. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- Cal.com inline booking embed -->
+  <script type="text/javascript">
+    var CAL_LINK = "your-username/your-event-slug"; // <-- replace with your real cal.com link
+
+    (function (C, A, L) {
+      let p = function (a, ar) { a.q.push(ar); };
+      let d = C.document;
+      C.Cal = C.Cal || function () {
+        let cal = C.Cal;
+        let ar = arguments;
+        if (!cal.loaded) {
+          cal.ns = {};
+          cal.q = cal.q || [];
+          d.head.appendChild(d.createElement("script")).src = A;
+          cal.loaded = true;
+        }
+        if (ar[0] === L) {
+          const api = function () { p(api, arguments); };
+          const namespace = ar[1];
+          api.q = api.q || [];
+          if (typeof namespace === "string") {
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar);
+            p(cal, ["initNamespace", namespace]);
+          } else p(cal, ar);
+          return;
+        }
+        p(cal, ar);
+      };
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+
+    Cal("init", "housesit", { origin: "https://cal.com" });
+
+    Cal.ns["housesit"]("inline", {
+      elementOrSelector: "#cal-inline",
+      config: { layout: "month_view" },
+      calLink: CAL_LINK,
+    });
+
+    Cal.ns["housesit"]("ui", {
+      styles: { branding: { brandColor: "#2f5d50" } },
+      hideEventTypeDetails: false,
+      layout: "month_view",
+    });
+  </script>
+</body>
+</html>

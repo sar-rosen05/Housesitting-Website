@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+  <rect width="600" height="450" fill="#f0ebe1"/>
+  <circle cx="300" cy="180" r="70" fill="#2f5d50"/>
+  <rect x="180" y="260" width="240" height="140" rx="20" fill="#2f5d50"/>
+  <text x="300" y="430" font-family="Segoe UI, sans-serif" font-size="20" fill="#5a5a5a" text-anchor="middle">
+    Add a photo of you and a pet here
+  </text>
+</svg>
