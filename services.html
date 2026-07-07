@@ -5,13 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services | Sarah's Housesitting</title>
   <meta name="description" content="House sitting, pet sitting, plant care, and more across the Greater Seattle Area, WA." />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <meta property="og:title" content="Services | Sarah's Housesitting" />
+  <meta property="og:description" content="Overnight housesitting and pet sitting, transparent pricing, and clear policies for the Greater Seattle Area, WA." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <header class="site-header">
     <nav class="nav">
-      <a href="index.html" class="nav-brand">Sarah's <span>Housesitting</span></a>
+      <a href="index.html" class="nav-brand"><span class="brand-logo-wrap"><img src="images/logo-mark.png" alt="" class="brand-logo" /></span>Sarah's <span>Housesitting</span></a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -29,15 +36,143 @@
     <p>Flexible care built around your home, your pets, and your travel schedule.</p>
   </section>
 
+  <nav class="tabs-nav">
+    <div class="tab-buttons" role="tablist">
+      <button class="tab-btn active" data-tab="how-it-works" role="tab" aria-selected="true">The Basics</button>
+      <button class="tab-btn" data-tab="whats-included" role="tab" aria-selected="false">What's Included</button>
+      <button class="tab-btn" data-tab="pricing" role="tab" aria-selected="false">Pricing &amp; Policies</button>
+      <button class="tab-btn" data-tab="faq" role="tab" aria-selected="false">FAQ</button>
+    </div>
+  </nav>
+
+  <div class="tab-panel" data-panel="how-it-works">
+
   <section>
+    <h2 class="section-title">Good to Know</h2>
+    <p class="section-subtitle">
+      A few boundaries that keep things clear and comfortable for both of us, up front.
+    </p>
     <div class="service-detail">
       <div class="service-item">
         <div class="icon">🏡</div>
         <div>
-          <h3>Overnight House Sitting</h3>
+          <h3>Overnight Stays Only</h3>
           <p>
-            I stay overnight at your home for the duration of your trip, keeping it lived-in and secure
-            while sticking to your normal household routine.
+            I don't offer kenneling at my own home, and I don't do single-day drop-in visits.
+            Every booking is an overnight stay at your home, for a minimum of 2&ndash;3 consecutive
+            nights &mdash; it's either that, or I'm not the right fit for the trip.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon">📷</div>
+        <div>
+          <h3>Camera &amp; Security Disclosure</h3>
+          <p>
+            Please let me know in advance if your home has security cameras. Outdoor cameras
+            (Ring doorbells and similar) are no problem at all &mdash; I just ask to be told
+            beforehand about any cameras inside the house or in bedrooms.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon">🚭</div>
+        <div>
+          <h3>Smoke &amp; Vape Free</h3>
+          <p>I don't smoke or vape, in your home or anywhere on your property.</p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon">🚪</div>
+        <div>
+          <h3>No Uninvited Guests</h3>
+          <p>I don't have visitors over during a stay unless it's discussed and approved with you first.</p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon">🔒</div>
+        <div>
+          <h3>Your Privacy, Respected</h3>
+          <p>
+            Your home's address and any identifiable photos of your property stay private &mdash;
+            I don't post them publicly or share them on social media.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <h2 class="section-title">Free Consultation, Before You Book</h2>
+    <p class="section-subtitle">
+      Every new client starts with a free consultation &mdash; not a sales pitch, just a chance to
+      get everything sorted before your trip. If you'd like to move forward, a deposit is collected
+      at the end of the visit to lock in your dates.
+    </p>
+    <div class="service-detail">
+      <div class="service-item">
+        <div class="icon">🏠</div>
+        <div>
+          <h3>A Tour of Your Home</h3>
+          <p>
+            I walk through your home with you so I know the layout, alarm codes, appliances, and
+            anything that needs special attention while you're gone.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon">📋</div>
+        <div>
+          <h3>A Clear Breakdown of Expectations</h3>
+          <p>
+            We go over feeding schedules, routines, house rules, and anything specific you need done
+            &mdash; so there's no guesswork once you're away.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon">🐾</div>
+        <div>
+          <h3>Meeting Your Pets</h3>
+          <p>
+            Time for your pets to meet me and get comfortable before I'm caring for them on my own.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="icon">💬</div>
+        <div>
+          <h3>Questions, Both Ways</h3>
+          <p>
+            Time for you to ask me anything, and for me to learn more about your household, your pets,
+            and how you like things done &mdash; plus emergency and vet contact info on file.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Housesitting &amp; Pet Sitting</h2>
+    <p class="section-subtitle">
+      Whether you have pets to care for or just need someone living in the house while you're gone,
+      I stay in your home for the length of your trip.
+    </p>
+    <div class="service-detail">
+      <div class="service-item">
+        <div class="icon">🏡</div>
+        <div>
+          <h3>Housesitting</h3>
+          <p>
+            No pets? No problem. I live in your home for the length of your trip, keeping it lived-in,
+            secure, and cared for &mdash; on top of the daily chores below.
           </p>
         </div>
       </div>
@@ -48,51 +183,98 @@
           <h3>Pet Sitting &amp; Care</h3>
           <p>
             Feeding, walks, playtime, litter boxes, and medication administration for dogs, cats, and
-            other household pets &mdash; on their regular schedule.
+            other household pets &mdash; on their regular schedule, alongside all the housesitting duties.
           </p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="service-item">
-        <div class="icon">🪴</div>
-        <div>
-          <h3>Plant &amp; Garden Care</h3>
-          <p>
-            Watering indoor and outdoor plants, light garden upkeep, and making sure everything is
-            thriving by the time you're back.
-          </p>
-        </div>
+  </div>
+
+  <div class="tab-panel" data-panel="whats-included" hidden>
+
+  <section>
+    <h2 class="section-title">Daily Home Care</h2>
+    <p class="section-subtitle">
+      These chores are handled every day I'm in your home, whether it's a housesit or a pet sit.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🗑️</div>
+        <h3>Trash &amp; Recycling</h3>
+        <p>Taken out on your normal collection schedule.</p>
       </div>
-
-      <div class="service-item">
+      <div class="card">
         <div class="icon">📬</div>
+        <h3>Mail &amp; Package Pickup</h3>
+        <p>Collected as needed so nothing piles up at the door.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🪴</div>
+        <h3>Plant Watering</h3>
+        <p>Both indoor and outdoor plants watered and kept healthy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <h2 class="section-title">Home Reset for Your Return</h2>
+    <p class="section-subtitle">
+      On the day I leave, I prep the house so you come home to a clean, put-together space
+      &mdash; not a mess waiting for you.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🗑️</div>
+        <h3>Trash Cans Emptied</h3>
+        <p>All trash cans emptied before you're back.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🧽</div>
+        <h3>Kitchen Cleaned</h3>
+        <p>Counters wiped down and any remaining dishes finished up, so the kitchen is spotless.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🛏️</div>
+        <h3>Fresh Sheets</h3>
+        <p>Beds I used are stripped and remade with fresh sheets.</p>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <div class="tab-panel" data-panel="pricing" hidden>
+
+  <section>
+    <h2 class="section-title">Time &amp; Scheduling</h2>
+    <p class="section-subtitle">
+      Transparency on how much I'm in the home during a stay &mdash; so there are no surprises for
+      either of us, and it's clear why pricing below has two base rates.
+    </p>
+    <div class="service-detail">
+      <div class="service-item">
+        <div class="icon">🗓️</div>
         <div>
-          <h3>Mail, Package &amp; Trash Handling</h3>
+          <h3>Standard Presence</h3>
           <p>
-            Collecting mail and packages and rotating trash/recycling bins so your home never looks
-            unattended.
+            I'm home overnight and present for all scheduled feeding and care windows, but I do have
+            flexibility to step out during the day for errands, appointments, or to see friends
+            &mdash; typically no more than 6&ndash;8 hours away at a stretch. I'm always back to
+            sleep at your home overnight.
           </p>
         </div>
       </div>
 
       <div class="service-item">
-        <div class="icon">🔒</div>
+        <div class="icon">🏠</div>
         <div>
-          <h3>Home Security Basics</h3>
+          <h3>Extended Presence</h3>
           <p>
-            Rotating lights and blinds, checking doors and windows, and maintaining a lived-in
-            appearance throughout your trip.
-          </p>
-        </div>
-      </div>
-
-      <div class="service-item">
-        <div class="icon">📸</div>
-        <div>
-          <h3>Regular Updates</h3>
-          <p>
-            Photo and text check-ins so you always know your home and pets are doing well while
-            you're away.
+            For pets or situations that need more company throughout the day &mdash; anxious pets,
+            medical needs, young puppies &mdash; I can commit to being in or around your home for
+            most of the day (8+ hours), with minimal time away.
           </p>
         </div>
       </div>
@@ -102,18 +284,168 @@
   <section class="alt">
     <h2 class="section-title">Pricing</h2>
     <p class="section-subtitle">
-      Rates depend on trip length, number of pets, and specific needs. Reach out with your dates for
-      a personalized quote.
+      Transparent, &agrave; la carte pricing &mdash; so you know exactly what your stay will cost before you book.
     </p>
-    <div style="text-align:center;">
+    <div class="pricing-table-wrap">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>What</th>
+            <th>Cost</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Standard Presence base rate (per night)</td>
+            <td>$100</td>
+            <td>Housesitting or pet sitting, 1 pet &mdash; flexible daytime schedule</td>
+          </tr>
+          <tr>
+            <td>Extended Presence base rate (per night)</td>
+            <td>$150</td>
+            <td>For pets/situations needing 8+ hours of in-home company per day</td>
+          </tr>
+          <tr>
+            <td>Each additional pet</td>
+            <td>+$10/night</td>
+            <td>2nd pet, 3rd pet, etc.</td>
+          </tr>
+          <tr>
+            <td>Pet on medication / special-needs care</td>
+            <td>+$10/night per pet</td>
+            <td>Stacks with the additional-pet fee</td>
+          </tr>
+          <tr>
+            <td>Multi-night stay (5+ consecutive nights)</td>
+            <td>&minus;10%</td>
+            <td>Discount for longer, more efficient bookings</td>
+          </tr>
+          <tr>
+            <td>Holidays / peak travel periods</td>
+            <td>+25&ndash;50%</td>
+            <td>New Year's, Thanksgiving, major holidays</td>
+          </tr>
+          <tr>
+            <td>Last-minute booking (under 48 hrs)</td>
+            <td>+$10&ndash;$25 flat</td>
+            <td>Compensates for limited prep time</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="pricing-note">
+      Free consultation for every new client &mdash; pricing above applies once your stay is booked.
+      Reach out with your dates for an exact quote.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Deposit &amp; Cancellation Policy</h2>
+    <p class="section-subtitle">
+      Straightforward and fair &mdash; so both of us are protected once dates are confirmed.
+    </p>
+    <div class="policy-card">
+      <h3>Deposit</h3>
+      <p>
+        There's no charge for the consultation itself. To confirm your dates, a deposit of 20% of
+        your total booking cost is collected in person at the end of your free consultation. This
+        single payment also covers my travel to and from your home, so there's no separate
+        distance fee &mdash; and it isn't an extra cost on top of your stay, it's credited toward
+        your total balance. The remaining balance is due when you arrive back home at the end of
+        your trip.
+      </p>
+      <h3>Cancellation</h3>
+      <p>
+        Deposits are non-refundable. Once your dates are confirmed, I turn down other bookings for
+        that window, so the deposit covers that commitment and my travel costs regardless of when a
+        cancellation happens.
+      </p>
+    </div>
+    <div style="text-align:center; margin-top: 32px;">
       <a href="contact.html" class="btn btn-primary">Request a Quote</a>
     </div>
   </section>
 
+  </div>
+
+  <div class="tab-panel" data-panel="faq" hidden>
+
+  <section>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Straight answers to the questions I hear most.</p>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What areas do you serve?</summary>
+        <p>
+          The Greater Seattle Area, including Woodinville, Redmond, Kirkland, Seattle, Bellevue,
+          Everett, and Lynnwood. I generally can't commit to areas more than 45 minutes from home,
+          since I need to be able to get back to my own area for doctor's appointments or personal
+          matters if something comes up during your trip.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you offer single-night stays or drop-in visits?</summary>
+        <p>
+          No &mdash; every booking is an overnight stay at your home, for a minimum of 2&ndash;3
+          consecutive nights. I don't offer kenneling at my own home or single-day drop-ins.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I book a stay?</summary>
+        <p>
+          Start with a free consultation &mdash; no obligation. If you'd like to move forward, a
+          20% deposit is collected at the end of that visit to lock in your dates.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What if I need to cancel?</summary>
+        <p>
+          Deposits are non-refundable, since I turn down other bookings once your dates are
+          confirmed. See <a href="#" class="tab-link" data-tab="pricing">Pricing &amp; Policies</a>
+          for full details.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Will I get updates while I'm away?</summary>
+        <p>Yes &mdash; I send photo and text updates throughout your stay so you always know how things are going.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What's the difference between Standard and Extended Presence?</summary>
+        <p>
+          Standard Presence (included in the base rate) means I'm home overnight and for all
+          feeding/care windows, with some daytime flexibility to run errands. Extended Presence is
+          an upgraded tier for pets or situations that need me home most of the day. See
+          <a href="#" class="tab-link" data-tab="pricing">Pricing &amp; Policies</a> for rates.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you offer a discount for longer stays?</summary>
+        <p>Yes &mdash; stays of 5+ consecutive nights get a 10% discount.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What if my home has security cameras?</summary>
+        <p>
+          Just let me know in advance. Outdoor cameras (like Ring doorbells) are totally fine
+          &mdash; I ask to be told beforehand about any cameras inside the house or in bedrooms.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  </div>
+
   <footer class="site-footer">
     <div class="footer-content">
       <div>
-        <div class="footer-brand">Sarah's <span>Housesitting</span></div>
+        <div class="footer-brand"><span class="brand-logo-wrap"><img src="images/logo-mark.png" alt="" class="brand-logo" /></span>Sarah's <span>Housesitting</span></div>
         <p>Serving the Greater Seattle Area, WA</p>
       </div>
       <ul class="footer-links">
