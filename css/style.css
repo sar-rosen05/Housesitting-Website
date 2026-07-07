@@ -202,8 +202,9 @@ img {
 }
 
 .hero-note {
-  margin-top: 24px;
-  font-size: 0.9rem;
+  margin-top: 40px;
+  font-size: 0.7rem;
+  font-style: italic;
   color: rgba(255, 255, 255, 0.75);
 }
 
